@@ -7,7 +7,7 @@
 - SynechismCore (Latent Neural ODEs, targeting arXiv / NeurIPS ML4PS 2026) — https://github.com/seek-k-nowledge/SynechismCore
 
 ## Links
-- Portfolio: https://YOURDOMAIN.com
+- Portfolio: https://seek-k-nowledge.github.io
 - GitHub: https://github.com/seek-k-nowledge
 - LinkedIn: https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b
 - Facebook: https://www.facebook.com/PaulEdwardHarris4th/

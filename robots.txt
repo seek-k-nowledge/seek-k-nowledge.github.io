@@ -46,4 +46,4 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
-Sitemap: https://YOURDOMAIN.com/sitemap.xml
+Sitemap: https://seek-k-nowledge.github.io/sitemap.xml
