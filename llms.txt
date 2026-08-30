@@ -1,0 +1,15 @@
+# Paul Edward Harris 4th
+
+> AI/ML practitioner working across applied AI systems and independent research.
+
+## Projects
+- Enterprise GraphRAG & Multi-Agent Swarm Engine — https://github.com/seek-k-nowledge/enterprise-graphrag-agent
+- SynechismCore (Latent Neural ODEs, targeting arXiv / NeurIPS ML4PS 2026) — https://github.com/seek-k-nowledge/SynechismCore
+
+## Links
+- Portfolio: https://YOURDOMAIN.com
+- GitHub: https://github.com/seek-k-nowledge
+- LinkedIn: https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b
+- Facebook: https://www.facebook.com/PaulEdwardHarris4th/
+- ORCID: https://orcid.org/0009-0009-3285-4610
+- X: [your X handle]

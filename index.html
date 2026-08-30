@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paul Edward Harris 4th — AI/ML Practitioner</title>
+<meta name="description" content="Paul Edward Harris IV — AI/ML practitioner working across applied AI systems and independent research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://YOURDOMAIN.com/#person",
+  "name": "Paul Edward Harris 4th",
+  "url": "https://YOURDOMAIN.com",
+  "jobTitle": "AI/ML Practitioner",
+  "description": "AI/ML practitioner working across applied AI systems and independent research.",
+  "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Retrieval-Augmented Generation", "Multi-Agent Systems", "Dynamical Systems", "Neural ODEs"],
+  "sameAs": [
+    "https://github.com/seek-k-nowledge",
+    "https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b",
+    "https://www.facebook.com/PaulEdwardHarris4th/",
+    "https://orcid.org/0009-0009-3285-4610",
+    "https://x.com/YOUR-X-HANDLE"
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #0B0D12;
+    --bg-raised: #12151C;
+    --text: #E8E6DE;
+    --text-muted: #8A8F9C;
+    --gold: #C9A227;
+    --teal: #4FD1C5;
+    --border: #21252F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.6;
+  }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  #attractor {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    opacity: 0.55;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 720px;
+  }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 1.2rem;
+  }
+  h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+  .tagline {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    z-index: 2;
+  }
+
+  section {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+  }
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  p { color: var(--text-muted); margin-bottom: 1rem; }
+  p.lead { color: var(--text); font-size: 1.05rem; }
+
+  .projects { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
+  .card {
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.75rem;
+    transition: border-color 0.2s ease;
+  }
+  .card:hover { border-color: var(--teal); }
+  .card h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+  }
+  .card p { font-size: 0.95rem; margin-bottom: 1rem; }
+  .card a {
+    color: var(--teal);
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+  }
+  .card a:hover { text-decoration: underline; }
+  .stack {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .links a:hover { color: var(--teal); border-color: var(--teal); }
+  .footer-note { color: var(--text-muted); font-size: 0.8rem; }
+
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    #attractor { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <canvas id="attractor"></canvas>
+  <div class="hero-content">
+    <div class="eyebrow">σ=10 ρ=28 β=8/3</div>
+    <h1>Paul Edward Harris 4th</h1>
+    <p class="tagline">AI/ML practitioner working across applied AI systems and independent research.</p>
+  </div>
+  <div class="scroll-hint mono">↓ scroll</div>
+</section>
+
+<section id="about">
+  <span class="section-label">Overview</span>
+  <p class="lead">AI/ML practitioner working across applied AI systems and independent research. Self-taught foundation; currently preparing to begin an accelerated BS-to-Master's program.</p>
+  <p>Not locked into one system, one framework, or one problem — what's below is current, not exhaustive. More on the way.</p>
+</section>
+
+<section id="projects">
+  <span class="section-label">Projects</span>
+  <h2>What I'm building</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Enterprise GraphRAG & Multi-Agent Swarm Engine</h3>
+      <p>A general-purpose knowledge graph RAG pipeline with self-grounding extraction and multi-agent reasoning — not tied to one document domain.</p>
+      <div class="stack">FastAPI · LangGraph · Neo4j · Streamlit</div>
+      <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/enterprise-graphrag-agent">View repository →</a></p>
+    </div>
+    <div class="card">
+      <h3>SynechismCore</h3>
+      <p>Latent Neural ODEs with aperiodic φ-scaling for chaotic dynamical systems — targeting arXiv and the ML4PS workshop at NeurIPS 2026.</p>
+      <div class="stack">PyTorch · torchdiffeq · Neural ODEs</div>
+      <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/SynechismCore">View repository →</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <span class="section-label">Research note</span>
+  <h2>Why φ-scaling</h2>
+  <p class="lead">Chaotic systems — turbulent fluids, weather, robotic control — amplify small errors over time. Standard sequence models lose accuracy quickly as those errors compound. SynechismCore tests whether encoding φ, the golden ratio, as an aperiodic scaling structure inside a Neural ODE helps it hold up longer across these systems. Results are mixed by design: current findings show wins on turbulence and chaotic bifurcation modeling, and a loss on robotics control — reported as-is, not smoothed over.</p>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="https://github.com/seek-k-nowledge">GitHub</a>
+    <a href="https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b">LinkedIn</a>
+    <a href="https://www.facebook.com/PaulEdwardHarris4th/">Facebook</a>
+    <a href="https://orcid.org/0009-0009-3285-4610">ORCID</a>
+    <a href="#">X</a>
+  </div>
+  <p class="footer-note mono">Connecticut, US</p>
+</footer>
+
+<script>
+// Live Lorenz attractor — real equations, not decoration
+const canvas = document.getElementById('attractor');
+const ctx = canvas.getContext('2d');
+let w, h;
+function resize() {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+let x = 0.1, y = 0, z = 0;
+const sigma = 10, rho = 28, beta = 8/3, dt = 0.008;
+let points = [];
+const maxPoints = 2600;
+
+function step() {
+  const dx = sigma * (y - x);
+  const dy = x * (rho - z) - y;
+  const dz = x * y - beta * z;
+  x += dx * dt; y += dy * dt; z += dz * dt;
+  points.push({x, y, z});
+  if (points.length > maxPoints) points.shift();
+}
+
+function project(p) {
+  const scale = Math.min(w, h) * 0.011;
+  return {
+    px: w / 2 + p.x * scale,
+    py: h / 2 + (p.z - 27) * scale * 0.9
+  };
+}
+
+function draw() {
+  ctx.clearRect(0, 0, w, h);
+  for (let i = 0; i < 3; i++) step();
+  ctx.lineWidth = 1.1;
+  for (let i = 1; i < points.length; i++) {
+    const a = project(points[i - 1]);
+    const b = project(points[i]);
+    const t = i / points.length;
+    const gold = [201, 162, 39], teal = [79, 209, 197];
+    const c = gold.map((g, idx) => Math.round(g + (teal[idx] - g) * t));
+    ctx.strokeStyle = `rgba(${c[0]},${c[1]},${c[2]},${t * 0.7})`;
+    ctx.beginPath();
+    ctx.moveTo(a.px, a.py);
+    ctx.lineTo(b.px, b.py);
+    ctx.stroke();
+  }
+  requestAnimationFrame(draw);
+}
+
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  draw();
+} else {
+  // static fallback frame
+  for (let i = 0; i < 800; i++) step();
+  ctx.lineWidth = 1;
+  ctx.strokeStyle = 'rgba(180,180,180,0.4)';
+  ctx.beginPath();
+  points.forEach((p, i) => {
+    const {px, py} = project(p);
+    i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+  });
+  ctx.stroke();
+}
+</script>
+
+</body>
+</html>

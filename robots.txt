@@ -1,0 +1,49 @@
+# Standard search engines — always allow
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI citation / live-answer crawlers — allow so you're eligible
+# to be cited when people ask AI systems questions
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# AI training-only crawlers — blocked (your content won't be
+# pulled into model training datasets, but this does NOT affect
+# your visibility in AI search/citations above)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://YOURDOMAIN.com/sitemap.xml
