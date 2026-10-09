@@ -3,26 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paul Edward Harris 4th — AI/ML Practitioner</title>
-<meta name="description" content="Paul Edward Harris IV — AI/ML practitioner working across applied AI systems and independent research.">
+<title>Paul Edward Harris 4th (Paul E. Harris IV) — Learning AI/ML by Building</title>
+<meta name="description" content="Paul Edward Harris 4th (Paul E. Harris IV) is an independent AI/ML learner and researcher in Connecticut, learning machine learning by building real projects with AI as a development partner.">
+<meta name="author" content="Paul Edward Harris 4th">
+<link rel="canonical" href="https://seek-k-nowledge.github.io/">
+
+<!-- Link previews (Facebook, LinkedIn, X) -->
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://seek-k-nowledge.github.io/">
+<meta property="og:title" content="Paul Edward Harris 4th — Learning AI/ML by Building">
+<meta property="og:description" content="Independent AI/ML learner and researcher. Projects: SynechismCore (Neural ODEs for chaotic systems) and a GraphRAG learning project.">
+<meta property="og:site_name" content="Paul Edward Harris 4th">
+<meta property="profile:first_name" content="Paul">
+<meta property="profile:last_name" content="Harris">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@PaulEHarris4th">
+<meta name="twitter:creator" content="@PaulEHarris4th">
+<meta name="twitter:title" content="Paul Edward Harris 4th — Learning AI/ML by Building">
+<meta name="twitter:description" content="Independent AI/ML learner and researcher, learning by building real projects with AI as a development partner.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://seek-k-nowledge.github.io/#person",
-  "name": "Paul Edward Harris 4th",
-  "url": "https://seek-k-nowledge.github.io",
-  "jobTitle": "AI/ML Practitioner",
-  "description": "AI/ML practitioner working across applied AI systems and independent research.",
-  "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Retrieval-Augmented Generation", "Multi-Agent Systems", "Dynamical Systems", "Neural ODEs"],
-  "sameAs": [
-    "https://github.com/seek-k-nowledge",
-    "https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b",
-    "https://www.facebook.com/PaulEdwardHarris4th/",
-    "https://orcid.org/0009-0009-3285-4610",
-    "https://x.com/PaulEHarris4th"
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://seek-k-nowledge.github.io/#page",
+      "url": "https://seek-k-nowledge.github.io/",
+      "name": "Paul Edward Harris 4th",
+      "mainEntity": { "@id": "https://seek-k-nowledge.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://seek-k-nowledge.github.io/#person",
+      "name": "Paul Edward Harris 4th",
+      "alternateName": ["Paul Edward Harris IV", "Paul E. Harris IV", "Paul E. Harris 4th", "Paul Harris IV"],
+      "givenName": "Paul",
+      "additionalName": "Edward",
+      "familyName": "Harris",
+      "honorificSuffix": "IV",
+      "url": "https://seek-k-nowledge.github.io/",
+      "jobTitle": "Independent AI/ML Learner & Researcher",
+      "description": "Independent AI/ML learner and researcher learning machine learning by building real projects with AI as a development partner.",
+      "address": { "@type": "PostalAddress", "addressRegion": "CT", "addressCountry": "US" },
+      "knowsAbout": ["Machine Learning", "Large Language Models", "Neural ODEs", "Chaotic Dynamical Systems", "Retrieval-Augmented Generation", "Knowledge Graphs", "AI-Assisted Software Development"],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0009-3285-4610"
+      },
+      "sameAs": [
+        "https://orcid.org/0009-0009-3285-4610",
+        "https://github.com/seek-k-nowledge",
+        "https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b",
+        "https://www.facebook.com/PaulEdwardHarris4th/",
+        "https://x.com/PaulEHarris4th"
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "SynechismCore",
+      "description": "AI-assisted independent ML research comparing a Latent Neural ODE against Transformer, Mamba and LSTM for forecasting chaotic systems under periodic correction with real observations. Results under revision.",
+      "codeRepository": "https://github.com/seek-k-nowledge/SynechismCore",
+      "programmingLanguage": "Python",
+      "license": "https://opensource.org/licenses/MIT",
+      "author": { "@id": "https://seek-k-nowledge.github.io/#person" }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Enterprise GraphRAG & Multi-Agent Swarm Engine",
+      "description": "AI-assisted GraphRAG learning project exploring LLM extraction, knowledge graphs, retrieval, and multi-agent workflows.",
+      "codeRepository": "https://github.com/seek-k-nowledge/enterprise-graphrag-agent",
+      "programmingLanguage": "Python",
+      "author": { "@id": "https://seek-k-nowledge.github.io/#person" }
+    }
   ]
 }
 </script>
@@ -46,7 +103,6 @@
   }
   .mono { font-family: 'IBM Plex Mono', monospace; }
 
-  /* Hero */
   .hero {
     position: relative;
     min-height: 100vh;
@@ -55,7 +111,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
   #attractor {
     position: absolute;
@@ -73,16 +129,21 @@
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.8rem;
     letter-spacing: 0.15em;
-    text-transform: uppercase;
     color: var(--teal);
     margin-bottom: 1.2rem;
   }
   h1 {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
-    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    font-size: clamp(2rem, 6vw, 3.6rem);
     letter-spacing: -0.02em;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .aka {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
   }
   .tagline {
     color: var(--text-muted);
@@ -103,7 +164,7 @@
   section {
     max-width: 760px;
     margin: 0 auto;
-    padding: 5rem 1.5rem;
+    padding: 5rem 1rem;
   }
   .section-label {
     font-family: 'IBM Plex Mono', monospace;
@@ -122,6 +183,18 @@
   }
   p { color: var(--text-muted); margin-bottom: 1rem; }
   p.lead { color: var(--text); font-size: 1.05rem; }
+
+  .path {
+    list-style: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-left: 1px solid var(--border);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+  }
+  .path li { margin-bottom: 0.35rem; }
+  .path li::before { content: "→ "; color: var(--teal); }
 
   .projects { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
   .card {
@@ -152,10 +225,31 @@
     color: var(--text-muted);
     margin-top: 0.75rem;
   }
+  .status {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--border);
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.8rem;
+  }
+
+  .note {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 1.5rem;
+  }
 
   footer {
     border-top: 1px solid var(--border);
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
     text-align: center;
   }
   .links {
@@ -185,56 +279,75 @@
 </head>
 <body>
 
-<section class="hero">
-  <canvas id="attractor"></canvas>
+<header class="hero">
+  <canvas id="attractor" aria-hidden="true"></canvas>
   <div class="hero-content">
     <div class="eyebrow">σ=10 ρ=28 β=8/3</div>
     <h1>Paul Edward Harris 4th</h1>
-    <p class="tagline">AI/ML practitioner working across applied AI systems and independent research.</p>
+    <p class="aka">also written Paul E. Harris IV</p>
+    <p class="tagline">Learning AI and machine learning by building real systems — with AI as my development partner.</p>
   </div>
-  <div class="scroll-hint mono">↓ scroll</div>
-</section>
+  <div class="scroll-hint mono" aria-hidden="true">↓ scroll</div>
+</header>
 
+<main>
 <section id="about">
-  <span class="section-label">Overview</span>
-  <p class="lead">AI/ML practitioner working across applied AI systems and independent research. Self-taught foundation; currently preparing to begin an accelerated BS-to-Master's program.</p>
-  <p>Not locked into one system, one framework, or one problem — what's below is current, not exhaustive. More on the way.</p>
+  <span class="section-label">About</span>
+  <h2>About Paul Edward Harris 4th</h2>
+  <p class="lead">I'm an independent AI/ML learner and researcher based in Connecticut. I don't have a lab or a CS degree yet — I have a GED, some online coursework, and a habit of building things that are a little past what I currently understand, then working until I do understand them.</p>
+  <p>My process looks like this:</p>
+  <ul class="path">
+    <li>idea</li>
+    <li>research</li>
+    <li>prompting AI tools to help generate code</li>
+    <li>running it and hitting errors</li>
+    <li>investigating and correcting</li>
+    <li>testing</li>
+    <li>documenting what actually happened</li>
+  </ul>
+  <p>Right now my focus is learning my own projects from the inside out — understanding every file well enough to explain it and change it without AI writing the change for me.</p>
 </section>
 
 <section id="projects">
   <span class="section-label">Projects</span>
-  <h2>What I'm building</h2>
+  <h2>What I'm building and learning</h2>
   <div class="projects">
-    <div class="card">
-      <h3>Enterprise GraphRAG & Multi-Agent Swarm Engine</h3>
-      <p>A general-purpose knowledge graph RAG pipeline with self-grounding extraction and multi-agent reasoning — not tied to one document domain.</p>
-      <div class="stack">FastAPI · LangGraph · Neo4j · Streamlit</div>
-      <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/enterprise-graphrag-agent">View repository →</a></p>
-    </div>
-    <div class="card">
+    <article class="card">
+      <span class="status">Research in progress</span>
       <h3>SynechismCore</h3>
-      <p>Latent Neural ODEs with aperiodic φ-scaling for chaotic dynamical systems — targeting arXiv and the ML4PS workshop at NeurIPS 2026.</p>
+      <p>An AI-assisted independent ML research project. The question: when a chaotic forecast is periodically corrected with real observations, does the forecaster's architecture still matter? It compares a Latent Neural ODE against Transformer, Mamba and LSTM. I'm developing it while learning PyTorch, numerical integration, experimental design, and model evaluation.</p>
+      <p>Status: results under revision. Plan: an arXiv write-up, then a 2027 workshop.</p>
       <div class="stack">PyTorch · torchdiffeq · Neural ODEs</div>
       <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/SynechismCore">View repository →</a></p>
-    </div>
+    </article>
+    <article class="card">
+      <span class="status">Learning project</span>
+      <h3>Enterprise GraphRAG &amp; Multi-Agent Swarm Engine</h3>
+      <p>An AI-assisted GraphRAG learning project exploring LLM extraction, knowledge graphs, retrieval, and multi-agent workflows. I'm learning the underlying architecture through iterative AI-assisted development and debugging.</p>
+      <div class="stack">Python · FastAPI · LangGraph · Neo4j · Streamlit</div>
+      <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/enterprise-graphrag-agent">View repository →</a></p>
+    </article>
   </div>
 </section>
 
 <section id="research">
   <span class="section-label">Research note</span>
   <h2>Why φ-scaling</h2>
-  <p class="lead">Chaotic systems — turbulent fluids, weather, robotic control — amplify small errors over time. Standard sequence models lose accuracy quickly as those errors compound. SynechismCore tests whether encoding φ, the golden ratio, as an aperiodic scaling structure inside a Neural ODE helps it hold up longer across these systems. Results are mixed by design: current findings show wins on turbulence and chaotic bifurcation modeling, and a loss on robotics control — reported as-is, not smoothed over.</p>
+  <p class="lead">Chaotic systems — turbulent fluids, weather, robotic control — amplify small errors over time, so prediction models drift away from reality. SynechismCore tests whether building φ, the golden ratio, into a Neural ODE as an aperiodic scaling structure helps it stay accurate longer.</p>
+  <p>Early results were mixed: some wins, and a clear loss on robotics control. Then I found flaws in how the project measured long-horizon accuracy — first in the metric itself, then a hidden 380-step floor in how it reported results. The fix is a floor-free measure, and the experiments are being re-run. Results get reported as they come out — wins and losses both.</p>
+  <div class="note">How this was made: this site and my projects are built with heavy AI assistance. I direct the work, run it, debug it, and check it — and I'm actively learning to understand every part myself.</div>
 </section>
+</main>
 
 <footer>
-  <div class="links">
-    <a href="https://github.com/seek-k-nowledge">GitHub</a>
-    <a href="https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b">LinkedIn</a>
-    <a href="https://www.facebook.com/PaulEdwardHarris4th/">Facebook</a>
-    <a href="https://orcid.org/0009-0009-3285-4610">ORCID</a>
-    <a href="https://x.com/PaulEHarris4th">X</a>
-  </div>
-  <p class="footer-note mono">Connecticut, US</p>
+  <nav class="links" aria-label="Profiles">
+    <a href="https://orcid.org/0009-0009-3285-4610" rel="me">ORCID</a>
+    <a href="https://github.com/seek-k-nowledge" rel="me">GitHub</a>
+    <a href="https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b" rel="me">LinkedIn</a>
+    <a href="https://x.com/PaulEHarris4th" rel="me">X</a>
+    <a href="https://www.facebook.com/PaulEdwardHarris4th/" rel="me">Facebook</a>
+  </nav>
+  <p class="footer-note mono">Paul Edward Harris 4th · Connecticut, US</p>
 </footer>
 
 <script>
@@ -275,11 +388,11 @@ function draw() {
   ctx.clearRect(0, 0, w, h);
   for (let i = 0; i < 3; i++) step();
   ctx.lineWidth = 1.1;
+  const gold = [201, 162, 39], teal = [79, 209, 197];
   for (let i = 1; i < points.length; i++) {
     const a = project(points[i - 1]);
     const b = project(points[i]);
     const t = i / points.length;
-    const gold = [201, 162, 39], teal = [79, 209, 197];
     const c = gold.map((g, idx) => Math.round(g + (teal[idx] - g) * t));
     ctx.strokeStyle = `rgba(${c[0]},${c[1]},${c[2]},${t * 0.7})`;
     ctx.beginPath();
@@ -292,17 +405,6 @@ function draw() {
 
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   draw();
-} else {
-  // static fallback frame
-  for (let i = 0; i < 800; i++) step();
-  ctx.lineWidth = 1;
-  ctx.strokeStyle = 'rgba(180,180,180,0.4)';
-  ctx.beginPath();
-  points.forEach((p, i) => {
-    const {px, py} = project(p);
-    i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
-  });
-  ctx.stroke();
 }
 </script>
 

@@ -1,15 +1,19 @@
 # Paul Edward Harris 4th
 
-> AI/ML practitioner working across applied AI systems and independent research.
+> Paul Edward Harris 4th (also written Paul E. Harris IV) is an independent AI/ML learner and researcher based in Connecticut, US. He learns machine learning by building real projects with AI tools as a development partner, and documents results honestly, including negative ones.
+
+He holds a GED and has completed online coursework (Stanford Online, University of Michigan via Coursera, Google). His projects are built with heavy AI assistance; he directs, runs, debugs, and verifies the work, and is actively learning to understand each part himself.
 
 ## Projects
-- Enterprise GraphRAG & Multi-Agent Swarm Engine — https://github.com/seek-k-nowledge/enterprise-graphrag-agent
-- SynechismCore (Latent Neural ODEs, targeting arXiv / NeurIPS ML4PS 2026) — https://github.com/seek-k-nowledge/SynechismCore
 
-## Links
-- Portfolio: https://seek-k-nowledge.github.io
-- GitHub: https://github.com/seek-k-nowledge
-- LinkedIn: https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b
-- Facebook: https://www.facebook.com/PaulEdwardHarris4th/
-- ORCID: https://orcid.org/0009-0009-3285-4610
-- X: https://x.com/PaulEHarris4th
+- [SynechismCore](https://github.com/seek-k-nowledge/SynechismCore): AI-assisted independent ML research asking whether a forecaster's architecture still matters when a chaotic forecast is periodically corrected with real observations. Compares a Latent Neural ODE with Transformer, Mamba and LSTM. Results are under revision and being re-run with a floor-free accuracy measure. Plan: arXiv write-up, then a 2027 workshop.
+- [Enterprise GraphRAG & Multi-Agent Swarm Engine](https://github.com/seek-k-nowledge/enterprise-graphrag-agent): AI-assisted learning project exploring LLM extraction, knowledge graphs, retrieval, and multi-agent workflows (Python, FastAPI, LangGraph, Neo4j, Streamlit).
+
+## Profiles
+
+- [Portfolio](https://seek-k-nowledge.github.io/)
+- [ORCID 0009-0009-3285-4610](https://orcid.org/0009-0009-3285-4610)
+- [GitHub: seek-k-nowledge](https://github.com/seek-k-nowledge)
+- [LinkedIn](https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b)
+- [X: @PaulEHarris4th](https://x.com/PaulEHarris4th)
+- [Facebook](https://www.facebook.com/PaulEdwardHarris4th/)
