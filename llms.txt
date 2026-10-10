@@ -1,8 +1,8 @@
 # Paul Edward Harris 4th
 
-> Paul Edward Harris 4th (also written Paul E. Harris IV) is an independent AI/ML learner and researcher based on Cape Cod, Massachusetts and in Connecticut, US. He learns machine learning by building real projects with AI tools as a development partner, and documents results honestly, including negative ones.
+> Paul Edward Harris 4th (also written Paul E. Harris IV) is an independent AI/ML learner and researcher from Connecticut, studying on Cape Cod, Massachusetts, US. He learns machine learning by building real projects with AI tools as a development partner, and documents results honestly, including negative ones.
 
-He holds a GED and has completed online coursework (Stanford Online, University of Michigan via Coursera, Google). His projects are built with heavy AI assistance; he directs, runs, debugs, and verifies the work, and is actively learning to understand each part himself.
+He has completed online coursework (Stanford Online, University of Michigan via Coursera, Google). His projects are built with heavy AI assistance; he directs, runs, debugs, and verifies the work, and is actively learning to understand each part himself.
 
 ## Projects
 
