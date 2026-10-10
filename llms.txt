@@ -7,7 +7,7 @@ His projects are built with heavy AI assistance; he directs, runs, debugs, and v
 ## Projects
 
 - [SynechismCore](https://github.com/seek-k-nowledge/SynechismCore): AI-assisted independent ML research asking whether a forecaster's architecture still matters when a chaotic forecast is periodically corrected with real observations. Compares a Latent Neural ODE with Transformer, Mamba and LSTM. Results are under revision and being re-run with a floor-free accuracy measure. Plan: arXiv write-up, then a 2027 workshop.
-- [GraphRAG Agent](https://github.com/seek-k-nowledge/enterprise-graphrag-agent): AI-assisted learning project exploring LLM extraction, knowledge graphs, retrieval, and agent workflows (Python, FastAPI, LangGraph, Neo4j, Streamlit).
+- [GraphRAG Agent](https://github.com/seek-k-nowledge/enterprise-graphrag-agent): Working prototype (v0.x), actively developed toward production. Self-grounding knowledge graph pipeline with cited answers. Roadmap: authentication, security hardening, claim typing, load testing. (Python, FastAPI, LangGraph, Neo4j, Streamlit)
 
 ## Profiles
 
