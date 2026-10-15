@@ -8,6 +8,8 @@ His projects are built with heavy AI assistance; he directs, runs, debugs, and v
 
 - [SynechismCore](https://github.com/seek-k-nowledge/SynechismCore): AI-assisted independent ML research asking whether a forecaster's architecture still matters when a chaotic forecast is periodically corrected with real observations. Compares a Latent Neural ODE with Transformer, Mamba and LSTM. Results are under revision and being re-run with a floor-free accuracy measure. Plan: arXiv write-up, then a 2027 workshop.
 - [GraphRAG Agent](https://github.com/seek-k-nowledge/enterprise-graphrag-agent): Working prototype (v0.x), actively developed toward production. Self-grounding knowledge graph pipeline with cited answers. Roadmap: authentication, security hardening, claim typing, load testing. (Python, FastAPI, LangGraph, Neo4j, Streamlit)
+- [Firm Radar](https://github.com/seek-k-nowledge/firm-radar): Working prototype (v0.1). A private narrative-intelligence operations room for each client: a threat radar, a crowd check that flags coordinated inauthentic behavior, network and spread maps, and weekly briefs with confidence levels. Python, runs locally, public sources only.
+- [Narrative Radar](https://github.com/seek-k-nowledge/narrative-radar): Working prototype (v0.1). A real-time news monitor that flags when a topic suddenly surges, across news, social, viral trends and video. Built to research his podcast, Listening Between the Lies.
 
 ## Profiles
 
@@ -16,5 +18,6 @@ His projects are built with heavy AI assistance; he directs, runs, debugs, and v
 - [GitHub: seek-k-nowledge](https://github.com/seek-k-nowledge)
 - [LinkedIn](https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b)
 - [X: @PaulEHarris4th](https://x.com/PaulEHarris4th)
+- [Hugging Face: seek-k-nowledge](https://huggingface.co/seek-k-nowledge)
 - [Facebook](https://www.facebook.com/PaulEdwardHarris4th/)
 - [Facebook Page](https://www.facebook.com/PaulEdwardHarrisIV/)

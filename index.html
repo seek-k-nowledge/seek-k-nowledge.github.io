@@ -12,7 +12,7 @@
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://seek-k-nowledge.github.io/">
 <meta property="og:title" content="Paul Edward Harris 4th — Learning AI/ML by Building">
-<meta property="og:description" content="Independent AI/ML learner and researcher. Projects: SynechismCore (Neural ODEs for chaotic systems) and GraphRAG Agent (working prototype).">
+<meta property="og:description" content="Independent AI/ML learner and researcher. Projects: SynechismCore (Neural ODEs for chaotic systems), GraphRAG Agent, Firm Radar and Narrative Radar.">
 <meta property="og:site_name" content="Paul Edward Harris 4th">
 <meta property="profile:first_name" content="Paul">
 <meta property="profile:last_name" content="Harris">
@@ -52,7 +52,7 @@
         { "@type": "PostalAddress", "addressLocality": "Cape Cod", "addressRegion": "MA", "addressCountry": "US" },
         { "@type": "PostalAddress", "addressRegion": "CT", "addressCountry": "US" }
       ],
-      "knowsAbout": ["Machine Learning", "Large Language Models", "Neural ODEs", "Chaotic Dynamical Systems", "Retrieval-Augmented Generation", "Knowledge Graphs", "AI-Assisted Software Development"],
+      "knowsAbout": ["Machine Learning", "Large Language Models", "Neural ODEs", "Chaotic Dynamical Systems", "Retrieval-Augmented Generation", "Knowledge Graphs", "AI-Assisted Software Development", "Open-Source Intelligence (OSINT)", "Narrative Intelligence", "Disinformation Detection", "Media Monitoring"],
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "ORCID",
@@ -64,7 +64,8 @@
         "https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b",
         "https://www.facebook.com/PaulEdwardHarris4th/",
         "https://www.facebook.com/PaulEdwardHarrisIV/",
-        "https://x.com/PaulEHarris4th"
+        "https://x.com/PaulEHarris4th",
+        "https://huggingface.co/seek-k-nowledge"
       ]
     },
     {
@@ -82,6 +83,24 @@
       "description": "Working prototype (v0.x), actively developed toward production. Self-grounding knowledge graph pipeline with cited answers. Roadmap: authentication, security hardening, claim typing, load testing.",
       "codeRepository": "https://github.com/seek-k-nowledge/enterprise-graphrag-agent",
       "programmingLanguage": "Python",
+      "author": { "@id": "https://seek-k-nowledge.github.io/#person" }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Firm Radar",
+      "description": "Working prototype (v0.1). A narrative-intelligence operations room per client: threat radar, crowd check for coordinated inauthentic behavior, network and spread maps, weekly briefs with confidence levels. Runs locally on public sources.",
+      "codeRepository": "https://github.com/seek-k-nowledge/firm-radar",
+      "programmingLanguage": "Python",
+      "license": "https://opensource.org/licenses/MIT",
+      "author": { "@id": "https://seek-k-nowledge.github.io/#person" }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Narrative Radar",
+      "description": "Working prototype (v0.1). A real-time news and narrative monitor with spike alerts across news, social, viral trends and video, built to research the podcast Listening Between the Lies.",
+      "codeRepository": "https://github.com/seek-k-nowledge/narrative-radar",
+      "programmingLanguage": "Python",
+      "license": "https://opensource.org/licenses/MIT",
       "author": { "@id": "https://seek-k-nowledge.github.io/#person" }
     }
   ]
@@ -216,6 +235,7 @@
     color: var(--text);
   }
   .card p { font-size: 0.95rem; margin-bottom: 1rem; }
+  .card .shot { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 3px; margin-bottom: 1rem; }
   .card a {
     color: var(--teal);
     text-decoration: none;
@@ -331,6 +351,22 @@
       <div class="stack">Python · FastAPI · LangGraph · Neo4j · Streamlit</div>
       <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/enterprise-graphrag-agent">View repository →</a></p>
     </article>
+    <article class="card">
+      <span class="status">Working prototype (v0.1)</span>
+      <h3>Firm Radar</h3>
+      <img class="shot" src="images/firm-radar-command.png" width="1200" height="692" loading="lazy" alt="Firm Radar command view: a threat radar with topics as blips around the center, a threat-level meter, and a crowd check list rating each topic as organic or worth a look.">
+      <p>A private narrative-intelligence operations room for each client: a threat radar, a crowd check that flags coordinated inauthentic behavior, network and spread maps, and weekly briefs with confidence levels.</p>
+      <div class="stack">Python · runs locally · public sources only · network analysis</div>
+      <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/firm-radar">View repository →</a> · <a href="https://github.com/seek-k-nowledge/narrative-radar">Narrative Radar →</a></p>
+    </article>
+    <article class="card">
+      <span class="status">Working prototype (v0.1)</span>
+      <h3>Narrative Radar</h3>
+      <img class="shot" src="images/narrative-radar-overview.png" width="1200" height="800" loading="lazy" alt="Narrative Radar overview: breaking news from the last 90 minutes, the hottest watchlist topics with spike charts, and what is going viral now.">
+      <p>A real-time news monitor that flags when a topic suddenly surges, across news, social, viral trends and video. Built to research my podcast, Listening Between the Lies.</p>
+      <div class="stack">Python · runs locally · public sources only · spike detection</div>
+      <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/narrative-radar">View repository →</a></p>
+    </article>
   </div>
 </section>
 
@@ -349,6 +385,7 @@
     <a href="https://github.com/seek-k-nowledge" rel="me">GitHub (seek-k-nowledge)</a>
     <a href="https://www.linkedin.com/in/paul-edward-harris-4th-3a689941b" rel="me">LinkedIn</a>
     <a href="https://x.com/PaulEHarris4th" rel="me">X</a>
+    <a href="https://huggingface.co/seek-k-nowledge" rel="me">Hugging Face</a>
     <a href="https://www.facebook.com/PaulEdwardHarris4th/" rel="me">Facebook</a>
     <a href="https://www.facebook.com/PaulEdwardHarrisIV/" rel="me">Facebook Page</a>
   </nav>
