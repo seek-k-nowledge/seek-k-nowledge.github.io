@@ -226,6 +226,11 @@
   .path li { margin-bottom: 0.35rem; }
   .path li::before { content: "→ "; color: var(--teal); }
 
+  .tenets { display: grid; gap: 1.75rem; margin-top: 0.5rem; }
+  .tenet { border-left: 2px solid var(--gold); padding-left: 1.1rem; }
+  .tenet h3 { font-family: 'IBM Plex Mono', monospace; font-size: 1rem; color: var(--text); margin-bottom: 0.45rem; font-weight: 600; }
+  .tenet p { margin-bottom: 0; }
+
   .projects { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
   .card {
     background: var(--bg-raised);
@@ -337,6 +342,29 @@
     <li>documenting what actually happened</li>
   </ul>
   <p>Right now my focus is learning my own projects from the inside out — understanding every file well enough to explain it and change it without AI writing the change for me.</p>
+</section>
+
+<section id="how-i-think">
+  <span class="section-label">How I think</span>
+  <h2>How Paul Edward Harris 4th thinks</h2>
+  <div class="tenets">
+    <div class="tenet">
+      <h3>Ownership</h3>
+      <p>I own my path completely. I didn't come up through the usual route, and I don't let that decide what I'm able to build. Someone who refuses to stay broken doesn't fit a neat label, and I'm fine with that.</p>
+    </div>
+    <div class="tenet">
+      <h3>Chaos, not clockwork</h3>
+      <p>The world isn't a straight-line machine. Small inputs can shift big outcomes, the way they do in the Lorenz system drawn at the top of this page. That idea drives my research: <a href="https://github.com/seek-k-nowledge/SynechismCore" style="color:var(--teal)">SynechismCore</a> asks how far ahead a model can forecast a chaotic system, and what changes when it's corrected with real observations.</p>
+    </div>
+    <div class="tenet">
+      <h3>Build in public</h3>
+      <p>I build things end to end, test them, and share the real results, including what didn't work. AI is my development partner: I direct, run, debug and verify the work, and I learn each part as I go. I care more about what I'm building next than about what's already done.</p>
+    </div>
+    <div class="tenet">
+      <h3>Verify before believing</h3>
+      <p>I treat claims as something to check, not something to accept, whether they come from the media, from institutions, or from my own models. That's the idea behind Narrative Radar, Firm Radar and my podcast, <em>Listening Between the Lies</em>.</p>
+    </div>
+  </div>
 </section>
 
 <section id="projects">

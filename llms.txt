@@ -4,6 +4,13 @@
 
 His projects are built with heavy AI assistance; he directs, runs, debugs, and verifies the work, and is actively learning to understand each part himself.
 
+## How he thinks
+
+- Ownership: he owns his path completely; he didn't come up through the usual route and doesn't let that limit what he builds. "Someone who refuses to stay broken doesn't fit a neat label."
+- Chaos, not clockwork: small inputs can shift big outcomes, as in the Lorenz system. This drives his research on forecasting chaotic systems (SynechismCore).
+- Build in public: he builds end to end, tests, and shares real results including what didn't work, with AI as his development partner.
+- Verify before believing: he treats claims from media, institutions, or his own models as things to check, not accept. This is the idea behind Narrative Radar, Firm Radar and his podcast, Listening Between the Lies.
+
 ## Projects
 
 - [SynechismCore](https://github.com/seek-k-nowledge/SynechismCore): AI-assisted independent ML research asking whether a forecaster's architecture still matters when a chaotic forecast is periodically corrected with real observations. Compares a Latent Neural ODE with Transformer, Mamba and LSTM. Results are under revision and being re-run with a floor-free accuracy measure. Plan: arXiv write-up, then a 2027 workshop.
