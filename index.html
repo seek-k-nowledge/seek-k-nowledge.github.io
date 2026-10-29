@@ -59,7 +59,7 @@
         { "@type": "PostalAddress", "addressLocality": "Cape Cod", "addressRegion": "MA", "addressCountry": "US" },
         { "@type": "PostalAddress", "addressRegion": "CT", "addressCountry": "US" }
       ],
-      "knowsAbout": ["Machine Learning", "Large Language Models", "Neural ODEs", "Chaotic Dynamical Systems", "Retrieval-Augmented Generation", "Knowledge Graphs", "AI-Assisted Software Development", "Open-Source Intelligence (OSINT)", "Narrative Intelligence", "Disinformation Detection", "Media Monitoring"],
+      "knowsAbout": ["Machine Learning", "Large Language Models", "Neural ODEs", "Chaotic Dynamical Systems", "Irregularly Sampled Time Series", "Retrieval-Augmented Generation", "Knowledge Graphs", "AI-Assisted Software Development", "Open-Source Intelligence (OSINT)", "Narrative Intelligence", "Disinformation Detection", "Media Monitoring"],
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "ORCID",
@@ -78,11 +78,24 @@
     {
       "@type": "SoftwareSourceCode",
       "name": "SynechismCore",
-      "description": "AI-assisted independent ML research comparing a Latent Neural ODE against Transformer, Mamba and LSTM for forecasting chaotic systems under periodic correction with real observations. Results under revision.",
+      "description": "Code and results for the technical report \"Continuous-Time Latent Dynamics for Long-Horizon Chaotic Forecasting under Irregular Sampling\". Compares a continuous-time latent neural ODE (SynechismV23) with Transformer, LSTM and Mamba forecasters on Lorenz-63 under four sampling regimes.",
       "codeRepository": "https://github.com/seek-k-nowledge/SynechismCore",
       "programmingLanguage": "Python",
       "license": "https://opensource.org/licenses/MIT",
       "author": { "@id": "https://seek-k-nowledge.github.io/#person" }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Continuous-Time Latent Dynamics for Long-Horizon Chaotic Forecasting under Irregular Sampling",
+      "name": "Continuous-Time Latent Dynamics for Long-Horizon Chaotic Forecasting under Irregular Sampling",
+      "author": { "@id": "https://seek-k-nowledge.github.io/#person" },
+      "datePublished": "2026-10",
+      "numberOfPages": 14,
+      "isPartOf": { "@type": "CreativeWorkSeries", "name": "SynechismCore Technical Report" },
+      "url": "https://github.com/seek-k-nowledge/SynechismCore/blob/master/paper/Harris_2026_Continuous-Time_Latent_Dynamics_Irregular_Sampling.pdf",
+      "encoding": { "@type": "MediaObject", "contentUrl": "https://github.com/seek-k-nowledge/SynechismCore/blob/master/paper/Harris_2026_Continuous-Time_Latent_Dynamics_Irregular_Sampling.pdf", "encodingFormat": "application/pdf" },
+      "about": ["Neural ordinary differential equations", "Chaotic dynamical systems", "Irregularly sampled time series", "Time series forecasting"],
+      "license": "https://opensource.org/licenses/MIT"
     },
     {
       "@type": "SoftwareSourceCode",
@@ -226,6 +239,12 @@
   .path li { margin-bottom: 0.35rem; }
   .path li::before { content: "→ "; color: var(--teal); }
 
+  .results { border-collapse: collapse; margin: 0.5rem 0 1.25rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; min-width: 260px; }
+  .results caption { text-align: left; color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.05em; padding-bottom: 0.5rem; }
+  .results th, .results td { text-align: left; padding: 0.4rem 1.25rem 0.4rem 0; border-bottom: 1px solid var(--border); }
+  .results th { color: var(--text-muted); font-weight: 500; }
+  .results td { color: var(--text); }
+  .results tbody tr:first-child td { color: var(--gold); }
   .tenets { display: grid; gap: 1.75rem; margin-top: 0.5rem; }
   .tenet { border-left: 2px solid var(--gold); padding-left: 1.1rem; }
   .tenet h3 { font-family: 'IBM Plex Mono', monospace; font-size: 1rem; color: var(--text); margin-bottom: 0.45rem; font-weight: 600; }
@@ -354,7 +373,7 @@
     </div>
     <div class="tenet">
       <h3>Chaos, not clockwork</h3>
-      <p>The world isn't a straight-line machine. Small inputs can shift big outcomes, the way they do in the Lorenz system drawn at the top of this page. That idea drives my research: <a href="https://github.com/seek-k-nowledge/SynechismCore" style="color:var(--teal)">SynechismCore</a> asks how far ahead a model can forecast a chaotic system, and what changes when it's corrected with real observations.</p>
+      <p>The world isn't a straight-line machine. Small inputs can shift big outcomes, the way they do in the Lorenz system drawn at the top of this page. That idea drives my research: <a href="https://github.com/seek-k-nowledge/SynechismCore" style="color:var(--teal)">SynechismCore</a> asks how long a model can keep forecasting a chaotic system accurately when its observations arrive at uneven times.</p>
     </div>
     <div class="tenet">
       <h3>Build in public</h3>
@@ -372,12 +391,12 @@
   <h2>What I'm building and learning</h2>
   <div class="projects">
     <article class="card">
-      <span class="status">Research in progress</span>
+      <span class="status">Technical report · Oct 2026</span>
       <h3>SynechismCore</h3>
-      <p>An AI-assisted independent ML research project. The question: when a chaotic forecast is periodically corrected with real observations, does the forecaster's architecture still matter? It compares a Latent Neural ODE against Transformer, Mamba and LSTM. I'm developing it while learning PyTorch, numerical integration, experimental design, and model evaluation.</p>
-      <p>Status: results under revision. Plan: an arXiv write-up, then a 2027 workshop.</p>
-      <div class="stack">PyTorch · torchdiffeq · Neural ODEs</div>
-      <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/SynechismCore">View repository →</a></p>
+      <p>Independent ML research. The question: when observations arrive at uneven times, does a continuous-time latent neural ODE (SynechismV23) keep chaotic forecasts accurate longer than Transformer, LSTM and Mamba forecasters given the same timing information?</p>
+      <p>On Lorenz-63 under four sampling regimes, SynechismV23 had the longest valid prediction time in all four regimes, with a modest lead over the LSTM. Next: stronger baselines, a turbulence benchmark, real robotics data, then arXiv and a 2027 workshop submission.</p>
+      <div class="stack">PyTorch · Neural ODEs · Lorenz-63 · MIT license</div>
+      <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/SynechismCore/blob/master/paper/Harris_2026_Continuous-Time_Latent_Dynamics_Irregular_Sampling.pdf">Read the paper (PDF) →</a> &nbsp; <a href="https://github.com/seek-k-nowledge/SynechismCore">Code and results →</a></p>
     </article>
     <article class="card">
       <span class="status">Prototype · v0.x</span>
@@ -406,10 +425,24 @@
 </section>
 
 <section id="research">
-  <span class="section-label">Research note</span>
-  <h2>Why φ-scaling</h2>
-  <p class="lead">Chaotic systems — turbulent fluids, weather, robotic control — amplify small errors over time, so prediction models drift away from reality. SynechismCore tests whether building φ, the golden ratio, into a Neural ODE as an aperiodic scaling structure helps it stay accurate longer.</p>
-  <p>Early results were mixed: some wins, and a clear loss on robotics control. Then I found flaws in how the project measured long-horizon accuracy — first in the metric itself, then a hidden 380-step floor in how it reported results. The fix is a floor-free measure, and the experiments are being re-run. Results get reported as they come out — wins and losses both.</p>
+  <span class="section-label">Research</span>
+  <h2>Chaotic forecasting under irregular sampling</h2>
+  <p class="lead"><a href="https://github.com/seek-k-nowledge/SynechismCore/blob/master/paper/Harris_2026_Continuous-Time_Latent_Dynamics_Irregular_Sampling.pdf" style="color:var(--teal)">Continuous-Time Latent Dynamics for Long-Horizon Chaotic Forecasting under Irregular Sampling</a>. Paul E. Harris IV, Independent Researcher. SynechismCore Technical Report, October 2026 (14 pages).</p>
+  <p><strong>Question.</strong> When observations arrive at uneven times, does a continuous-time latent neural ODE (SynechismV23) keep chaotic forecasts accurate longer than Transformer, LSTM and Mamba forecasters given the same timing information?</p>
+  <p><strong>Setup.</strong> The Lorenz-63 system observed under four sampling regimes with the same average rate: regular, jitter, half missing and exponential. Every model was trained to convergence (200 epochs) over 5 seeds and scored by valid prediction time (VPT) in Lyapunov times.</p>
+  <p><strong>Results.</strong> SynechismV23 had the longest valid prediction time in all four regimes. The Transformer and Mamba lost about 80% of their VPT between regular and exponential sampling. Against the LSTM, SynechismV23's lead under irregular sampling is consistent but modest: 4 of 5 seeds, 9–14%.</p>
+  <table class="results">
+    <caption>VPT under exponential sampling (Lyapunov times)</caption>
+    <thead><tr><th>Model</th><th>VPT</th></tr></thead>
+    <tbody>
+      <tr><td>SynechismV23</td><td>2.03</td></tr>
+      <tr><td>LSTM</td><td>1.78</td></tr>
+      <tr><td>Transformer</td><td>0.55</td></tr>
+      <tr><td>Mamba</td><td>0.50</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Next steps.</strong> Stronger baselines, a turbulence benchmark (Kuramoto–Sivashinsky), real robotics data, then arXiv and a 2027 workshop submission.</p>
+  <p class="mono" style="font-size:0.85rem;"><a href="https://github.com/seek-k-nowledge/SynechismCore/blob/master/paper/Harris_2026_Continuous-Time_Latent_Dynamics_Irregular_Sampling.pdf" style="color:var(--teal)">Paper (PDF)</a> · <a href="https://github.com/seek-k-nowledge/SynechismCore" style="color:var(--teal)">Code and per-forecast results (MIT)</a></p>
   <div class="note">How this was made: this site and my projects are built with heavy AI assistance. I direct the work, run it, debug it, and check it — and I'm actively learning to understand every part myself.</div>
 </section>
 </main>
