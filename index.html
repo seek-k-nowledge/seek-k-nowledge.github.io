@@ -78,7 +78,7 @@
     {
       "@type": "SoftwareSourceCode",
       "name": "SynechismCore",
-      "description": "Code and results for the technical report \"Continuous-Time Latent Dynamics for Long-Horizon Chaotic Forecasting under Irregular Sampling\". Introduces SynechismV23, a continuous-time latent neural ODE forecasting architecture, and compares it with Transformer, LSTM and Mamba forecasters on Lorenz-63 under four sampling regimes.",
+      "description": "Code and results for the technical report \"Continuous-Time Latent Dynamics for Long-Horizon Chaotic Forecasting under Irregular Sampling\". Introduces SynechismV23, a continuous-time latent neural ODE forecasting architecture, and compares it with Transformer, LSTM and Mamba-style forecasters on Lorenz-63 under four sampling regimes.",
       "codeRepository": "https://github.com/seek-k-nowledge/SynechismCore",
       "programmingLanguage": "Python",
       "license": "https://opensource.org/licenses/MIT",
@@ -393,7 +393,7 @@
     <article class="card">
       <span class="status">Technical report · Oct 2026</span>
       <h3>SynechismCore</h3>
-      <p>Independent ML research built around SynechismV23, a forecasting architecture I designed: a continuous-time latent neural ODE with an elastic attractor term, golden-ratio sub-step scheduling and a laminar bypass. The question: when observations arrive at uneven times, does it keep chaotic forecasts accurate longer than three widely used architectures (Transformer, LSTM and Mamba) given the same timing information?</p>
+      <p>Independent ML research built around SynechismV23, a forecasting architecture I designed: a continuous-time latent neural ODE with an elastic attractor term, golden-ratio sub-step scheduling and a laminar bypass. The question: when observations arrive at uneven times, does it keep chaotic forecasts accurate longer than Transformer, LSTM and Mamba-style forecasters given the same timing information?</p>
       <p>On Lorenz-63 under four sampling regimes, SynechismV23 had the longest valid prediction time in all four regimes, with a modest lead over the LSTM. Next: stronger baselines, a turbulence benchmark, real robotics data, then arXiv and a 2027 workshop submission.</p>
       <div class="stack">PyTorch · Neural ODEs · Lorenz-63 · MIT license</div>
       <p style="margin-top:1rem;"><a href="https://github.com/seek-k-nowledge/SynechismCore/blob/master/paper/Harris_2026_Continuous-Time_Latent_Dynamics_Irregular_Sampling.pdf">Read the paper (PDF) →</a> &nbsp; <a href="https://github.com/seek-k-nowledge/SynechismCore">Code and results →</a></p>
@@ -428,10 +428,10 @@
   <span class="section-label">Research</span>
   <h2>Chaotic forecasting under irregular sampling</h2>
   <p class="lead"><a href="https://github.com/seek-k-nowledge/SynechismCore/blob/master/paper/Harris_2026_Continuous-Time_Latent_Dynamics_Irregular_Sampling.pdf" style="color:var(--teal)">Continuous-Time Latent Dynamics for Long-Horizon Chaotic Forecasting under Irregular Sampling</a>. Paul E. Harris IV, Independent Researcher. SynechismCore Technical Report, October 2026 (14 pages).</p>
-  <p><strong>Architecture.</strong> SynechismV23 is a forecasting architecture I designed. It is a latent neural ODE: instead of updating on a fixed step, it learns a continuous rule for how its hidden state changes over time, so it can forecast to any point in time. It adds an elastic attractor term that keeps long forecasts bounded, golden-ratio sub-step scheduling for the integrator, and a laminar bypass that takes a cheaper step where the dynamics are smooth.</p>
-  <p><strong>Question.</strong> When observations arrive at uneven times, does SynechismV23 keep chaotic forecasts accurate longer than three widely used sequence architectures (a Transformer, an LSTM and Mamba) given the same timing information?</p>
-  <p><strong>Setup.</strong> The Lorenz-63 system observed under four sampling regimes with the same average rate: regular, jitter, half missing and exponential. Every model was trained to convergence (200 epochs) over 5 seeds and scored by valid prediction time (VPT) in Lyapunov times.</p>
-  <p><strong>Results.</strong> SynechismV23 had the longest valid prediction time in all four regimes. The Transformer and Mamba lost about 80% of their VPT between regular and exponential sampling. Against the LSTM, SynechismV23's lead under irregular sampling is consistent but modest: 4 of 5 seeds, 9–14%.</p>
+  <p><strong>Architecture.</strong> SynechismV23 is a forecasting architecture I designed. It is a latent neural ODE: instead of updating on a fixed step, it learns a continuous rule for how its hidden state changes over time, so it can forecast to any point in time. It adds an elastic attractor term that keeps long forecasts bounded, golden-ratio sub-step scheduling for the integrator, and a laminar bypass that switches to a simpler linear update where the dynamics are smooth.</p>
+  <p><strong>Question.</strong> When observations arrive at uneven times, does SynechismV23 keep chaotic forecasts accurate longer than three sequence-model baselines (a Transformer, an LSTM and a simplified Mamba-style state-space model) given the same timing information?</p>
+  <p><strong>Setup.</strong> The Lorenz-63 system observed under four sampling regimes with the same nominal average rate: regular, jitter, half missing and exponential. Every model was trained for 200 epochs, over 5 seeds, and scored by valid prediction time (VPT) in Lyapunov times.</p>
+  <p><strong>Results.</strong> SynechismV23 had the longest valid prediction time in all four regimes. The Transformer and Mamba-style baselines lost about 80% of their VPT between regular and exponential sampling. Against the LSTM, SynechismV23's lead under irregular sampling is consistent but modest: 4 of 5 seeds, 9–14%. The LSTM degrades least as timing becomes uneven; SynechismV23 ranks highest because it starts much higher.</p>
   <table class="results">
     <caption>VPT under exponential sampling (Lyapunov times)</caption>
     <thead><tr><th>Model</th><th>VPT</th></tr></thead>
@@ -439,10 +439,11 @@
       <tr><td>SynechismV23</td><td>2.03</td></tr>
       <tr><td>LSTM</td><td>1.78</td></tr>
       <tr><td>Transformer</td><td>0.55</td></tr>
-      <tr><td>Mamba</td><td>0.50</td></tr>
+      <tr><td>Mamba-style</td><td>0.50</td></tr>
     </tbody>
   </table>
-  <p><strong>Next steps.</strong> Stronger baselines, a turbulence benchmark (Kuramoto–Sivashinsky), real robotics data, then arXiv and a 2027 workshop submission.</p>
+  <p><strong>Limits.</strong> One system (Lorenz-63); a separately trained model per sampling regime; the Transformer and Mamba-style baselines output a whole forecast block while SynechismV23 and the LSTM roll forward, so architecture and decoding are not yet separated; the Mamba-style model is a simplified implementation; component ablations are so far at 50 epochs only.</p>
+  <p><strong>Next steps.</strong> Matched step-by-step baselines, a reference Mamba and a continuous-time Transformer, more seeds, full-budget ablations, a turbulence benchmark (Kuramoto–Sivashinsky), real robotics data, then arXiv and a 2027 workshop submission.</p>
   <p><strong>Project history.</strong> SynechismCore began as an exploratory study of forecasting under periodic correction. That study was discontinued, and this report supersedes it; only the irregular-sampling results above are claims of this work.</p>
   <p class="mono" style="font-size:0.85rem;"><a href="https://github.com/seek-k-nowledge/SynechismCore/blob/master/paper/Harris_2026_Continuous-Time_Latent_Dynamics_Irregular_Sampling.pdf" style="color:var(--teal)">Paper (PDF)</a> · <a href="https://github.com/seek-k-nowledge/SynechismCore" style="color:var(--teal)">Code and per-forecast results (MIT)</a></p>
   <div class="note">How this was made: this site and my projects are built with heavy AI assistance. I direct the work, run it, debug it, and check it — and I'm actively learning to understand every part myself.</div>
